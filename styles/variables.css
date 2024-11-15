@@ -5,23 +5,14 @@
   --accent-font-family: PressStart2P;
   --text-wght: 400;
   --subtitle-wght: 700;
-  /* переопределить в переменных (Вариативные шрифты: Немного о font-variation-settings*/
-
   --bg-image: 
     repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), 
     linear-gradient(#e7e7e7 0.01%, #1a1a1a );
-    /* нужно ли решать баг с прозрачностью? */
-    /* туда ли я поставила 0.01%? */
   --accent-color: black;
-  /* точно ли это акцентный цвет? - нет, акцентный черный, совместить с бордер колор */
-
   --bg-color: white;
-  /* --border-color: black; */
-  /* это акцентный цвет! */
-
+  --stroke-color: white;
   --reversed-color: white;
-
   --heart-contour: black;
   --heart-fill: red;
 }

@@ -5,36 +5,7 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-/* СДЕЛАТЬ В САМОМ КОНЦЕ */
-
-
-:root.theme-dark {
-  --text-wght: 465;
-  --subtitle-wght: 785;
-
-  --bg-image: 
-    repeating-linear-gradient(#000 0, #000 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px), 
-    linear-gradient(#007f0c 0.01%, #004306 100%);
-    /* нужно ли решать баг с прозрачностью? */
-    /* туда ли я поставила 0.01%? */
-  --accent-color: #00CC14;
-;
-  /* точно ли это акцентный цвет? - нет, акцентный черный, совместить с бордер колор */
-
-  --bg-color: black;
-  /* --border-color: black; */
-  /* это акцентный цвет! */
-
-  --reversed-color: black;
-
-  --heart-contour: #00CC14;
-  --heart-fill: red;
-}
-
 :root.theme-light {
-  --main-font-family: Inter-Variable;
-  --accent-font-family: PressStart2P;
   --text-wght: 400;
   --subtitle-wght: 700;
   --bg-image: 
@@ -43,8 +14,24 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a );
   --accent-color: black;
   --bg-color: white;
+  --stroke-color: white;
   --reversed-color: white;
   --heart-contour: black;
+  --heart-fill: red;
+}
+
+:root.theme-dark {
+  --text-wght: 465;
+  --subtitle-wght: 785;
+  --bg-image: 
+    repeating-linear-gradient(#000 0, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px), 
+    linear-gradient(#007f0c 0.01%, #004306 100%);
+  --accent-color: #00CC14;
+  --bg-color: black;
+  --stroke-color: black;
+  --reversed-color: var(--accent-color);
+  --heart-contour: #00CC14;
   --heart-fill: red;
 }
 
@@ -52,23 +39,14 @@
   :root {
     --text-wght: 465;
     --subtitle-wght: 785;
-  
     --bg-image: 
       repeating-linear-gradient(#000 0, #000 2px, transparent 2px, transparent 4px),
       repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px), 
       linear-gradient(#007f0c 0.01%, #004306 100%);
-      /* нужно ли решать баг с прозрачностью? */
-      /* туда ли я поставила 0.01%? */
     --accent-color: #00CC14;
-  ;
-    /* точно ли это акцентный цвет? - нет, акцентный черный, совместить с бордер колор */
-  
     --bg-color: black;
-    /* --border-color: black; */
-    /* это акцентный цвет! */
-  
-    --reversed-color: black;
-  
+    --stroke-color: black;
+    --reversed-color: var(--accent-color);
     --heart-contour: #00CC14;
     --heart-fill: red;
   }
