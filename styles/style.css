@@ -213,7 +213,7 @@ button:focus {
 
 /* --- Like buttons --- */
 
-.like-area{
+.like-area {
   display: flex;
   justify-content: end;
   align-items: start;
@@ -252,7 +252,7 @@ button:focus {
   content: '';
   position: absolute;
   background-color: var(--reversed-color);  
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   transform: translateX(-100%);
   inset-block-start: 0;
   inset-inline-start: 0;
