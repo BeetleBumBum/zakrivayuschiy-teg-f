@@ -45,7 +45,7 @@
 /* --- Like animations --- */
 
 .like-icon:hover .core {
-  fill: var(--heart-contour);
+  fill: var(--heart-contour, black);
   transition: fill 0.3s linear;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .like-icon:hover .main-body {
-  fill: var(--heart-contour);
+  fill: var(--heart-contour, black);
   transition: fill 0.3s linear 0.05s;
 }
 
@@ -63,27 +63,27 @@
 }
 
 .like-icon:active .core {
-  fill: var(--heart-fill);
+  fill: var(--heart-fill, red);
   transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
-  fill: var(--heart-fill);
+  fill: var(--heart-fill, red);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
-  fill: var(--heart-fill);
+  fill: var(--heart-fill, red);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--heart-fill);
+  fill: var(--heart-fill, red);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--heart-fill);
+  fill: var(--heart-fill, red);
   transition: fill 0.3s linear 0.06s;
 }
 
@@ -97,6 +97,6 @@
 }
 
 .like-icon:not(.is-liked) .contour {
-  fill: var(--heart-contour);
+  fill: var(--heart-contour, black);
   transition: fill .1s linear;
 }
